@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.crud-parent {
+    width: 80%;
+    margin: auto;
+}
+
+.crud-parent h1 {
+    text-align: center;
+}
+
+.crud-parent input:not(.prod-info input) {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.crud-parent .category input {
+    margin-bottom: 10px;
+}
+
+.crud-parent .prod-info {
+    display: flex;
+    gap: 5px;
+}
+
+.crud-parent .prod-info input,
+.crud-parent .prod-info .total {
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+@media(max-width: 992px) {
+    .crud-parent .prod-info {
+        display: block;
+
+    }
+
+    .crud-parent .prod-info input,
+    .crud-parent .prod-info .total {
+        width: 100%;
+    }
+}
+
+.crud-parent .prod-info .total {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.crud-parent .create {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: brown;
+    color: white;
+}
+
+.crud-parent .search-by {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.crud-parent button {
+    cursor: pointer;
+}
+
+.crud-parent .search-by button {
+    flex-basis: 48%;
+    padding: 5px;
+}
+
+.crud-parent .delete-all button {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: rgba(255, 0, 0, 0.747);
+    color: white;
+}
+
+.crud-parent .table-parent {
+    overflow-x: auto;
+}
+
+.crud-parent table {
+    width: 100%;
+    text-align: center;
+}
+
+.crud-parent table tr td {
+    border: 1px solid #ddd;
+    padding: 5px;
+
+}
+
+.crud-parent table .update {
+    padding: 5px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+.crud-parent table .delete {
+    padding: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}

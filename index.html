@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="crud-parent">
+      <h1 class="heading">Products Repo</h1>
+      <form class="crud-inputs">
+        <div class="prod">
+          <input type="text" class="prod" placeholder="Product" id="prod" />
+        </div>
+        <div class="prod-info">
+          <input type="number" placeholder="Price" id="price" />
+          <input type="number" placeholder="Discount" id="discount" />
+          <input type="number" placeholder="Ads" id="ads" />
+          <div class="total" id="total">Total:</div>
+        </div>
+        <div class="count">
+          <input type="number" placeholder="Count" id="count" />
+        </div>
+        <div class="category">
+          <input type="text" placeholder="Category" id="category" />
+        </div>
+        <button id="create" class="create">Create</button>
+      </form>
+      <input type="text" placeholder="Search" id="search" class="search" />
+      <div class="search-by">
+        <button id="catrgory-search">Category Search</button>
+        <button id="product-search">Product Search</button>
+      </div>
+      <div class="delete-all">
+        <button id="delete-all">Delete All</button>
+      </div>
+      <div class="table-parent">
+      <table class="products-table" id="products-table">
+        <tr class="main-title"></tr>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+    </div>
+
+    <script src="./js/crud.js"></script>
+  </body>
+</html>
