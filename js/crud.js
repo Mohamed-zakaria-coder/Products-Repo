@@ -27,7 +27,7 @@ let temp;
 
 function Product() {
   allPriceInputs.forEach((input) => {
-    input.addEventListener("keyup", () => {
+    input.addEventListener("input", () => {
       Total();
     });
   });
